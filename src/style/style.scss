@@ -1,0 +1,66 @@
+// Color selection
+$backgroundBlack: rgb(25, 26, 25);
+$titleColor: red;
+$mainFontColor: orange;
+$navFontColor: purple;
+
+//media breakpoint
+$breakpoint-phone: 450px;
+$breakpoint-tablet: 768px;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background: $backgroundBlack;
+}
+header {
+  margin: 0 auto;
+}
+.title-head {
+  color: $titleColor;
+  margin: 0 auto;
+  text-align: center;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.nav-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-btn {
+  border: 0;
+  min-width: 110px;
+  padding: 0;
+  height: 30px;
+  color: $navFontColor;
+  background: white;
+  &:hover {
+    transform: scale(1.1);
+    background: grey;
+  }
+}
+.reservation-btn {
+  min-width: 140px;
+}
+@media (max-width: $breakpoint-phone) {
+  .nav-btn-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-btn {
+    width: 100%;
+  }
+}
