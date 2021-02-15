@@ -5,7 +5,7 @@ $mainFontColor: orange;
 $navFontColor: purple;
 
 //media breakpoint
-$media-xs: x;
+$media-xs: 0px;
 $media-sm: 576px;
 $media-md: 768px;
 $media-lg: 992px;
@@ -39,6 +39,7 @@ header {
   letter-spacing: 10px;
 }
 nav {
+  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -59,6 +60,7 @@ nav {
 }
 .nav-btn {
   border: 0;
+  margin: 0 1px;
   min-width: 110px;
   padding: 0;
   height: 30px;
@@ -81,20 +83,37 @@ nav {
   }
   .nav-btn {
     width: 100%;
+    &:hover {
+      transform: unset;
+    }
   }
 }
 .section-wrapper {
-  min-width: 100vw;
 }
 .page-section {
   text-align: center;
   max-width: $media-xl;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   margin: 15px auto;
+  @media (max-width: $media-xl) {
+    flex-direction: column;
+    margin: 15px 0;
+  }
 }
 .menu-side {
   min-width: $media-sm;
+  flex-wrap: wrap;
   height: 500px;
   margin: 15px auto;
+}
+@media (max-width: $media-sm) {
+  .menu-side {
+    margin: 15px 0;
+    min-width: calc(#{$media-sm} - 250px);
+  }
+  .page-section {
+    margin: 15px 0;
+  }
 }
