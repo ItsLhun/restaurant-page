@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 html,
 body {
   margin: 0;
@@ -15,9 +16,13 @@ header {
 }
 
 .title-head {
-  color: red;
+  color: #daf737;
+  font-size: 4rem;
+  font-weight: lighter;
   margin: 0 auto;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
 }
 
 nav {
@@ -35,6 +40,7 @@ nav {
 }
 
 .nav-btn-wrapper {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,8 +49,9 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 15px auto;
+  list-style: none;
+  list-style-type: none;
 }
 
 .nav-btn {
@@ -59,23 +66,48 @@ nav {
 .nav-btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: grey;
+  opacity: 70%;
 }
 
 .reservation-btn {
   min-width: 140px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   .nav-btn-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .nav-btn {
     width: 100%;
   }
+}
+
+.section-wrapper {
+  min-width: 100vw;
+}
+
+.page-section {
+  text-align: center;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 15px auto;
+}
+
+.menu-side {
+  min-width: 576px;
+  height: 500px;
+  margin: 15px auto;
 }
 /*# sourceMappingURL=style.css.map */
