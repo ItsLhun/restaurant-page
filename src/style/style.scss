@@ -109,21 +109,28 @@ nav {
   height: 500px;
   margin: 15px auto;
 }
+.menu-section-title {
+}
+.menu-dish {
+}
 
 .aboutus-img {
   flex-wrap: wrap;
-  width: calc(#{$media-sm} - 110px);
-  height: calc(#{$media-sm} - 110px);
+  min-width: calc(#{$media-sm} - 100px);
+  height: calc(#{$media-sm} - 100px);
   background-image: url("./img/founder-photo.jpg");
   background-repeat: no-repeat;
   background-position: 25% 75%;
   margin: 15px auto;
+  border: 0;
+  box-shadow: n;
 }
 .aboutus-par-one {
   flex-wrap: wrap;
-  min-width: calc(#{$media-sm} + 110px);
-  min-height: 500px;
-  margin: 0px auto;
+  min-width: calc(#{$media-sm} + 100px);
+  max-width: calc(#{$media-sm} + 100px);
+  height: calc(#{$media-sm} - 100px);
+  margin: 15px auto;
   background: orange;
 }
 .aboutus-par-two {
@@ -136,16 +143,21 @@ nav {
     margin: 15px 0;
     min-width: calc(#{$media-sm} - 250px);
   }
-  .page-section,
-  .aboutus-img,
-  .aboutus-par-one {
+  .page-section {
     margin: 15px 0;
   }
-  .aboutus-par-one,
+  .aboutus-par-one {
+    min-width: calc(#{$media-sm} - 250px);
+    margin: 15px 5px;
+  }
   .aboutus-img {
     min-width: calc(#{$media-sm} - 250px);
-    min-height: calc(#{$media-sm} - 250px);
-
-    padding: 0;
+    margin: 15px 0;
+  }
+}
+@media (max-width: $media-md) {
+  .aboutus-par-one {
+    min-width: calc(#{$media-sm} - 250px);
+    margin: 15px 5px;
   }
 }
