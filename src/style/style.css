@@ -6,6 +6,7 @@ body {
 }
 
 body {
+  overflow-y: scroll;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #191a19;
@@ -127,13 +128,47 @@ nav {
   margin: 15px auto;
 }
 
+.aboutus-img {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(576px - 110px);
+  height: calc(576px - 110px);
+  background-image: url("./img/founder-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+  margin: 15px auto;
+}
+
+.aboutus-par-one {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: calc(576px + 110px);
+  min-height: 500px;
+  margin: 0px auto;
+  background: orange;
+}
+
+.aboutus-par-two {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px auto;
+}
+
 @media (max-width: 576px) {
   .menu-side {
     margin: 15px 0;
     min-width: calc(576px - 250px);
   }
-  .page-section {
+  .page-section,
+  .aboutus-img,
+  .aboutus-par-one {
     margin: 15px 0;
+  }
+  .aboutus-par-one,
+  .aboutus-img {
+    min-width: calc(576px - 250px);
+    min-height: calc(576px - 250px);
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

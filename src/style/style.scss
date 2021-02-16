@@ -23,6 +23,7 @@ body {
   padding: 0;
 }
 body {
+  overflow-y: scroll;
   box-sizing: border-box;
   background: $backgroundBlack;
 }
@@ -108,12 +109,43 @@ nav {
   height: 500px;
   margin: 15px auto;
 }
+
+.aboutus-img {
+  flex-wrap: wrap;
+  width: calc(#{$media-sm} - 110px);
+  height: calc(#{$media-sm} - 110px);
+  background-image: url("./img/founder-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+  margin: 15px auto;
+}
+.aboutus-par-one {
+  flex-wrap: wrap;
+  min-width: calc(#{$media-sm} + 110px);
+  min-height: 500px;
+  margin: 0px auto;
+  background: orange;
+}
+.aboutus-par-two {
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
 @media (max-width: $media-sm) {
   .menu-side {
     margin: 15px 0;
     min-width: calc(#{$media-sm} - 250px);
   }
-  .page-section {
+  .page-section,
+  .aboutus-img,
+  .aboutus-par-one {
     margin: 15px 0;
+  }
+  .aboutus-par-one,
+  .aboutus-img {
+    min-width: calc(#{$media-sm} - 250px);
+    min-height: calc(#{$media-sm} - 250px);
+
+    padding: 0;
   }
 }

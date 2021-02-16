@@ -2,6 +2,7 @@ import { btnArrays, createNav } from "./navbar.js";
 import { createIntro } from "./intropage.js";
 import { createMenu } from "./menu.js";
 import { createContact } from "./contact.js";
+import { createAbout } from "./aboutus.js";
 
 //two distinct sections, nav and dynamic section
 const divContent = document.querySelector("#content");
@@ -28,7 +29,7 @@ for (let i = 0; i < btnArrays.length; i++) {
         createContact(dynamicSection);
         break;
       case 3:
-        //createContact(dynamicSection);
+        createAbout(dynamicSection);
         break;
       case 4:
         //createContact(dynamicSection);
