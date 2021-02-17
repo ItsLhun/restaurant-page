@@ -9,9 +9,7 @@ function createNav(mainContent) {
   const btnMenu = document.createElement("button");
   btnMenu.textContent = "MENU";
   btnArrays.push(btnMenu);
-  const btnContact = document.createElement("button");
-  btnContact.textContent = "CONTACT";
-  btnArrays.push(btnContact);
+
   const btnAbout = document.createElement("button");
   btnAbout.textContent = "ABOUT US";
   btnArrays.push(btnAbout);
@@ -25,6 +23,15 @@ function createNav(mainContent) {
     navElem.appendChild(e);
     btnWrapper.appendChild(navElem);
     e.classList.add("nav-btn");
+    e.addEventListener("click", () => {
+      btnArrays.forEach((elem) => {
+        elem.classList.remove("active-nav-btn");
+      });
+      if (e.textContent === "HOME") {
+      } else {
+        e.classList.add("active-nav-btn");
+      }
+    });
   });
   navDiv.appendChild(btnWrapper);
   mainContent.appendChild(navDiv);

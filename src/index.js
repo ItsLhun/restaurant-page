@@ -1,7 +1,7 @@
 import { btnArrays, createNav } from "./navbar.js";
 import { createIntro } from "./intropage.js";
 import { createMenu } from "./menu.js";
-import { createContact } from "./contact.js";
+import { createReservation } from "./reservation.js";
 import { createAbout } from "./aboutus.js";
 
 //two distinct sections, nav and dynamic section
@@ -26,13 +26,10 @@ for (let i = 0; i < btnArrays.length; i++) {
         createMenu(dynamicSection);
         break;
       case 2:
-        createContact(dynamicSection);
-        break;
-      case 3:
         createAbout(dynamicSection);
         break;
-      case 4:
-        //createContact(dynamicSection);
+      case 3:
+        createReservation(dynamicSection);
         break;
     }
   });

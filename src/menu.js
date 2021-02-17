@@ -4,36 +4,87 @@ const createMenu = (mainContent) => {
 
   // TO-DO: create factory function for plates and sections
 
-  const menuOne = document.createElement("div");
-  const menuOneTitle = document.createElement("h2");
-  menuOneTitle.textContent = "Entrees";
-  menuOne.appendChild(menuOneTitle);
-  menuOne.style.background = "red";
-  menuOne.classList.add("menu-side");
+  function createMenuSection(title) {
+    const menuOne = document.createElement("div");
+    const menuOneTitle = document.createElement("h2");
+    menuOneTitle.classList.add("menu-section-title");
+    menuOneTitle.textContent = title;
+    menuOne.appendChild(menuOneTitle);
+    menuOne.style.background = "red";
+    menuOne.classList.add("menu-side");
+    return menuOne;
+  }
+  function createDish(menuSubsection, dishname, price, description) {
+    const dishWrapper = document.createElement("div");
+    const dishTitle = document.createElement("h4");
+    const dishDesc = document.createElement("p");
+    const dishPrice = document.createElement("p");
+    dishWrapper.appendChild(dishTitle);
+    dishWrapper.appendChild(dishDesc);
+    dishWrapper.appendChild(dishPrice);
+    menuSubsection.appendChild(dishWrapper);
+    dishWrapper.classList.add("dish-wrapper");
+    dishPrice.classList.add("price");
+    dishTitle.textContent = dishname;
+    dishDesc.textContent = description;
+    dishPrice.textContent = `€ ${price}`;
+  }
 
-  const menuTwo = document.createElement("div");
-  const menuTwoTitle = document.createElement("h2");
-  menuTwoTitle.textContent = "Main courses";
-  menuTwo.appendChild(menuTwoTitle);
+  //create subsections
+  const menuOne = createMenuSection("Entrees");
+  const menuTwo = createMenuSection("Main courses");
+  const menuThree = createMenuSection("Desserts");
+  const menuFour = createMenuSection("Drinks");
 
-  menuTwo.style.background = "green";
-  menuTwo.classList.add("menu-side");
-
-  const menuThree = document.createElement("div");
-  const menuThreeTitle = document.createElement("h2");
-  menuThreeTitle.textContent = "Dessers";
-  menuThree.appendChild(menuThreeTitle);
-
-  menuThree.style.background = "purple";
-  menuThree.classList.add("menu-side");
-
-  const menuFour = document.createElement("div");
-  const menuFourTitle = document.createElement("h2");
-  menuFourTitle.textContent = "Drinks";
-  menuFour.appendChild(menuFourTitle);
-
-  menuFour.style.background = "purple";
-  menuFour.classList.add("menu-side");
+  // create dishes
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward best quality forward "
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
+  createDish(
+    menuOne,
+    "Burrata Salad",
+    15,
+    "A combination of fresh ingredients to bring the best quality forward"
+  );
 
   menuSection.appendChild(menuOne);
   menuSection.appendChild(menuTwo);
