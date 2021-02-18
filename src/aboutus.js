@@ -8,17 +8,25 @@ const createAbout = (mainContent) => {
   const paraOne = document.createElement("p");
   paraOne.classList.add("aboutus-par-one");
   const subparaOne = document.createElement("p");
-  paraOne.appendChild(subparaOne);
   const subparaTwo = document.createElement("p");
+
+  paraOne.appendChild(subparaOne);
   paraOne.appendChild(subparaTwo);
 
-  subparaOne.textContent = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex praesentium perspiciatis eveniet similique maiores sequi laborum provident labore, necessitatibus impedit corporis magni cum illum quaerat reprehenderit doloremque, nemo vel natus.
-Unde, deserunt aperiam sunt aliquid qui ducimus, culpa assumenda debitis adipisci voluptatum, voluptates enim numquam porro sit ipsum. Doloremque, sit excepturi quibusdam asperiores accusantium magni quam expedita voluptatibus cupiditate porro?
-Assumenda magni repellat aperiam illum nemo id temporibus eius exe`;
-  subparaTwo.textContent = `rcitationem, repellendus consequuntur facere! Alias blanditiis repellat at molestiae perspiciatis, enim hic veritatis soluta accusantium amet dolorem, quis dolor, assumenda illum.
-Ipsam minus facere, veniam totam neque accusantium cupiditate, expedita officia reprehenderit quidem, ab asperiores sapiente voluptatibus cum maxime aspernatur animi consequatur laboriosam esse? Veniam cupiditate tempore non beatae magnam nisi.
-Quas suscipit corporis fuga ipsam eius quis alias culpa! Perspiciatis neque modi reprehenderit repellendus labore expedita iure eos possimus temporibus nulla. Dolorum in possimus eos ad quam, atque eveniet natus?
-Nobis doloremque porro voluptatibus molestiae voluptate nihil itaque totam quos facere quibusdam debitis blanditiis officiis earum eaque sunt dicta reiciendis, temporibus ipsum, iusto culpa, quas deserunt doloribus. Rerum, maiores qui.`;
+  const subparaThree = document.createElement("p");
+  const subparaFour = document.createElement("p");
+
+  subparaThree.classList.add("quote-text");
+  subparaFour.classList.add("quote-text");
+
+  paraOne.appendChild(subparaThree);
+  paraOne.appendChild(subparaFour);
+
+  subparaOne.textContent = `Founded in 1955 by the legendary Mick Eissentan, NOMAD was established as a modern beacon to the bold and inconformists of the time. An inviting palace free of judgements and  ill intentions where everyone is welcome to join the conversation.`;
+  subparaTwo.textContent = `To this day we stand faithful to NOMAD's original spirit, every evolving but never changing. Welcome!`;
+
+  subparaThree.textContent = `"Part of the secret to success in life is to eat what you like, and let the food fight it out inside."`;
+  subparaFour.textContent = `- Mark Twain`;
 
   aboutSection.appendChild(imgSide);
   aboutSection.appendChild(paraOne);

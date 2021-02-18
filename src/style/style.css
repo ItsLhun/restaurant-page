@@ -9,7 +9,7 @@ body {
   overflow-y: scroll;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #191a19;
+  background: #ffffff;
 }
 
 header {
@@ -62,14 +62,22 @@ nav {
   min-width: 110px;
   padding: 0;
   height: 30px;
-  color: purple;
-  background: white;
+  background: none;
+  font-size: 1.1rem;
 }
 
 .nav-btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 70%;
+}
+
+.nav-btn-light {
+  color: white;
+}
+
+.nav-btn-dark {
+  color: #2e2e2e;
 }
 
 .reservation-btn {
@@ -126,17 +134,20 @@ nav {
 }
 
 .menu-side {
+  font-family: Georgia, serif;
   min-width: 576px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 15px auto;
+  background: white;
 }
 
 .menu-section-title {
-  color: #e4e7dc;
+  color: #2e2e2e;
 }
 
 .dish-wrapper {
+  color: #2e2e2e;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: calc(576px* 0.85) calc(576px* 0.15);
@@ -153,7 +164,6 @@ nav {
   -ms-grid-row: 1;
   grid-row: 1;
   text-align: left;
-  color: orchid;
   margin-left: 10px;
 }
 
@@ -191,8 +201,8 @@ nav {
   background-position: 25% 75%;
   margin: 15px auto;
   border: 0;
-  -webkit-box-shadow: n;
-          box-shadow: n;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .aboutus-par-one {
@@ -205,7 +215,6 @@ nav {
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: orange;
   text-align: justify;
   font-size: 1.1rem;
 }
@@ -214,6 +223,11 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 15px auto;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 @media (max-width: 576px) {

@@ -1,8 +1,11 @@
 const btnArrays = [];
 function createNav(mainContent) {
   const navDiv = document.createElement("nav");
+
   const btnWrapper = document.createElement("ul");
   btnWrapper.classList.add("nav-btn-wrapper");
+  btnWrapper.classList.add("nav-btn-light");
+
   const btnIntro = document.createElement("button");
   btnIntro.textContent = "HOME";
   btnArrays.push(btnIntro);
@@ -18,6 +21,7 @@ function createNav(mainContent) {
   btnReservations.textContent = "RESERVATION";
   btnArrays.push(btnReservations);
   btnArrays.forEach((e) => {
+    e.classList.add("nav-btn-light");
     const navElem = document.createElement("li");
     navElem.classList.add("navbar-item");
     navElem.appendChild(e);
@@ -28,7 +32,16 @@ function createNav(mainContent) {
         elem.classList.remove("active-nav-btn");
       });
       if (e.textContent === "HOME") {
+        btnArrays.forEach((e) => {
+          e.classList.remove("nav-btn-dark");
+          e.classList.add("nav-btn-light");
+        });
       } else {
+        btnArrays.forEach((e) => {
+          e.classList.add("nav-btn-dark");
+          e.classList.remove("nav-btn-light");
+        });
+
         e.classList.add("active-nav-btn");
       }
     });
