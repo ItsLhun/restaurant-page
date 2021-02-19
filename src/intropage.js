@@ -4,10 +4,31 @@ const createIntro = (mainContent) => {
     const titlewrapper = document.createElement("div");
     const titleHead = document.createElement("h1");
     headWrapper.setAttribute("id", "header");
-    headWrapper.appendChild(titleHead);
-    titleHead.textContent = "NOMAD";
+    //titleHead.textContent = "NOMAD";
     titleHead.classList.add("title-head");
     titleHead.classList.add("intro-center");
+    const N = document.createElement("span");
+    N.textContent = "N";
+    const O = document.createElement("span");
+    O.textContent = "O";
+    O.style.textDecoration = "underline";
+    const M = document.createElement("span");
+    M.textContent = "M";
+    M.style.textDecoration = "underline";
+    const A = document.createElement("span");
+    A.textContent = "A";
+    A.style.textDecoration = "underline";
+    const D = document.createElement("span");
+    D.textContent = "D";
+
+    titleHead.appendChild(N);
+    titleHead.appendChild(O);
+    titleHead.appendChild(M);
+    titleHead.appendChild(A);
+    titleHead.appendChild(D);
+
+    titlewrapper.appendChild(titleHead);
+    headWrapper.appendChild(titlewrapper);
   };
   createHeader();
   const createAddress = () => {
