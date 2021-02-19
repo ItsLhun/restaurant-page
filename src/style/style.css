@@ -14,16 +14,21 @@ body {
 
 header {
   margin: 0 auto;
+  color: white;
 }
 
-.title-head {
-  color: #daf737;
+header .title-head {
   font-size: 4rem;
   font-weight: lighter;
-  margin: 0 auto;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 10px;
+  line-height: 500px;
+}
+
+.intro-center {
+  vertical-align: middle;
+  text-align: center;
+  margin: auto auto;
 }
 
 nav {
@@ -77,16 +82,15 @@ nav {
 }
 
 .nav-btn-dark {
-  color: #2e2e2e;
+  color: #424141;
 }
 
 .reservation-btn {
   min-width: 140px;
-  background: #4bc57e;
 }
 
 .active-nav-btn {
-  background: red;
+  border: 1px solid #424141;
 }
 
 @media (max-width: 576px) {
@@ -109,6 +113,7 @@ nav {
 }
 
 .page-section {
+  color: #424141;
   text-align: center;
   max-width: 1200px;
   -ms-flex-wrap: wrap;
@@ -143,11 +148,11 @@ nav {
 }
 
 .menu-section-title {
-  color: #2e2e2e;
+  color: #424141;
 }
 
 .dish-wrapper {
-  color: #2e2e2e;
+  color: #424141;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: calc(576px* 0.85) calc(576px* 0.15);
@@ -196,7 +201,8 @@ nav {
       flex-wrap: wrap;
   min-width: calc(576px - 100px);
   height: calc(576px - 100px);
-  background-image: url("./img/founder-photo.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("./img/founder-photo.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("./img/founder-photo.jpg");
   background-repeat: no-repeat;
   background-position: 25% 75%;
   margin: 15px auto;
@@ -210,7 +216,7 @@ nav {
       flex-wrap: wrap;
   min-width: calc(576px + 100px);
   max-width: calc(576px + 100px);
-  min-height: calc(576px - 100px);
+  min-height: calc(576px - 200px);
   margin: 15px auto;
   padding: 15px;
   -webkit-box-sizing: border-box;

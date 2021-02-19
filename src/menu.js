@@ -180,12 +180,7 @@ const createMenu = (mainContent) => {
     10,
     "Bitters muddled with a sugar cube and mixed with rye whiskey"
   );
-  createDish(
-    menuDrink,
-    "—  Sherry Sangaree  —",
-    10,
-    "Sherry shaken with honey liqueur. Served in a cordial glass with an orange twist"
-  );
+
   createDish(
     menuDrink,
     "—  Snake Oil  —",
