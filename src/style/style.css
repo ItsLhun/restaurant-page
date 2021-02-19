@@ -13,16 +13,25 @@ body {
 }
 
 header {
-  margin: 0 auto;
+  margin: 50px auto;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 header .title-head {
   font-size: 4rem;
-  font-weight: lighter;
-  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   letter-spacing: 10px;
-  line-height: 500px;
+  line-height: 400px;
+}
+
+header .address-desc {
+  margin-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgba(64, 64, 64, 0.26);
+  font-weight: 100;
 }
 
 .intro-center {

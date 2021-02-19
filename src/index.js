@@ -14,7 +14,7 @@ divContent.appendChild(dynamicSection);
 const navDiv = document.createElement("nav");
 
 createIntro(dynamicSection);
-document.body.style.backgroundImage = `url("./img/462280.jpg")`;
+document.body.style.background = `linear-gradient(rgba(2,2,2,.25), rgba(2,2,2,.25)), url("./img/462280.jpg")`;
 
 for (let i = 0; i < btnArrays.length; i++) {
   btnArrays[i].addEventListener("click", (e) => {
@@ -26,7 +26,7 @@ for (let i = 0; i < btnArrays.length; i++) {
       case 0:
         navDiv.classList.remove("nav-btn-dark");
         createIntro(dynamicSection);
-        document.body.style.background = `linear-gradient(rgba(64,64,64,.15), rgba(64,64,64,.15)), url("./img/462280.jpg")`;
+        document.body.style.background = `linear-gradient(rgba(2,2,2,.25), rgba(2,2,2,.25)), url("./img/462280.jpg")`;
         break;
       case 1:
         //navDiv.classList.add("nav-btn-dark");

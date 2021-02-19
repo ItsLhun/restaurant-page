@@ -1,7 +1,8 @@
 // Color selection
-$backgroundBlack: #ffffff;
+$backgroundColor: #ffffff;
 $titleColor: rgb(255, 255, 255);
 $mainFontColor: rgb(66, 65, 65);
+$ERE: rgb(0, 0, 0);
 $navFontColor: rgb(255, 255, 255);
 $menuBackground: rgb(255, 255, 255);
 
@@ -25,20 +26,23 @@ body {
 body {
   overflow-y: scroll;
   box-sizing: border-box;
-  background: $backgroundBlack;
-  //background-image: url("./img/462280.jpg");
+  background: $backgroundColor;
 }
 header {
-  margin: 0 auto;
+  margin: 50px auto;
   color: $titleColor;
+  font-family: $title-font;
   .title-head {
     font-size: 4rem;
-    font-weight: lighter;
-    font-family: $title-font;
+    font-weight: bold;
     letter-spacing: 10px;
-    line-height: 500px;
+    line-height: 400px;
   }
   .address-desc {
+    margin-top: 50px;
+    width: fit-content;
+    background: rgba(64, 64, 64, 0.26);
+    font-weight: 100;
   }
 }
 
