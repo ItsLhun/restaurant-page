@@ -4,7 +4,6 @@ const createIntro = (mainContent) => {
     const titlewrapper = document.createElement("div");
     const titleHead = document.createElement("h1");
     headWrapper.setAttribute("id", "header");
-    //titleHead.textContent = "NOMAD";
     titleHead.classList.add("title-head");
     titleHead.classList.add("intro-center");
     const N = document.createElement("span");
@@ -31,14 +30,13 @@ const createIntro = (mainContent) => {
     headWrapper.appendChild(titlewrapper);
   };
   createHeader();
-  const createAddress = () => {
+  (function createAddress() {
     const address = document.createElement("h2");
     headWrapper.appendChild(address);
     address.textContent = "'T ZAND 12, 8000 BRUGGER, BELGIUM";
     address.classList.add("address-desc");
     address.classList.add("intro-center");
-  };
-  createAddress();
+  })();
   mainContent.appendChild(headWrapper);
 };
 

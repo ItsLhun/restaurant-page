@@ -46,25 +46,10 @@ const createReservation = (mainContent) => {
   makeInput("Guests", false);
   makeInput("Comments", true);
 
-  const dateInputDay = document.createElement("input");
-  const dateInputMonth = document.createElement("input");
-  const dateInputYear = document.createElement("input");
-
-  const guestsInput = document.createElement("input");
-
   const btnSubmit = document.createElement("button");
   btnSubmit.classList.add("btnSubmit");
   btnSubmit.textContent = "SUBMIT";
 
-  /*const imgSide = document.createElement("img");
-  imgSide.classList.add("aboutus-img");
-
-  const paraOne = document.createElement("p");
-  paraOne.classList.add("aboutus-par-one");
-  paraOne.textContent = "lorem lorem lorem lorem ";
-
-  contactSection.appendChild(imgSide);
-  contactSection.appendChild(paraOne);*/
   rightForm.appendChild(btnSubmit);
   reserveSection.appendChild(leftWrap);
   reserveSection.appendChild(rightWrap);

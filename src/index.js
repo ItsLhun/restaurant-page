@@ -29,18 +29,14 @@ for (let i = 0; i < btnArrays.length; i++) {
         document.body.style.background = `linear-gradient(rgba(2,2,2,.25), rgba(2,2,2,.25)), url("./img/462280.jpg")`;
         break;
       case 1:
-        //navDiv.classList.add("nav-btn-dark");
         createMenu(dynamicSection);
         break;
       case 2:
-        // navDiv.classList.add("nav-btn-dark");
         createAbout(dynamicSection);
         break;
       case 3:
-        //  navDiv.classList.add("nav-btn-dark");
         createReservation(dynamicSection);
         break;
     }
-    //navDiv.classList.add("nav-btn-dark");
   });
 }
