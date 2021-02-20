@@ -234,6 +234,10 @@ nav {
   font-size: 1.1rem;
 }
 
+.aboutus-par-one p {
+  margin-top: 55px;
+}
+
 .aboutus-par-two {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -243,6 +247,13 @@ nav {
 .quote-text {
   font-size: 1.2rem;
   font-style: italic;
+}
+
+#reserve-left {
+  width: calc(576px - 300px);
+  max-width: calc(576px - 300px);
+  color: red;
+  background: black;
 }
 
 @media (max-width: 576px) {
@@ -264,6 +275,12 @@ nav {
   .dish-wrapper {
     -ms-grid-columns: 85% 15%;
         grid-template-columns: 85% 15%;
+  }
+  header {
+    margin: 10px auto;
+  }
+  header .title-head {
+    line-height: 200px;
   }
 }
 

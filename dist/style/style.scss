@@ -128,6 +128,16 @@ nav {
     margin: 15px 0;
   }
 }
+.page-section-res {
+  @media (max-width: $media-xl) {
+    flex-direction: row;
+    margin: 15px 0;
+  }
+  @media (max-width: $media-sm) {
+    flex-direction: column;
+    margin: 15px 0;
+  }
+}
 .menu-side {
   font-family: $menu-font;
   min-width: $media-sm;
@@ -191,6 +201,9 @@ nav {
   box-sizing: border-box;
   text-align: justify;
   font-size: 1.1rem;
+  p {
+    margin-top: 55px;
+  }
 }
 .aboutus-par-two {
   flex-wrap: wrap;
@@ -199,6 +212,54 @@ nav {
 .quote-text {
   font-size: 1.2rem;
   font-style: italic;
+}
+#reserve-left {
+  box-sizing: border-box;
+  margin-top: 50px;
+  width: calc(#{$media-sm} - 100px);
+  padding: 70px;
+  p {
+    text-align: justify;
+    line-height: 1.2rem;
+  }
+}
+#reserve-right {
+  font-family: $menu-font;
+  margin: 0 auto;
+  margin-top: 50px;
+  min-width: calc(#{$media-sm} - 250px);
+  //max-width: calc(#{$media-sm} + 150px);
+  min-height: calc(#{$media-sm} - 200px);
+  label {
+    text-align: left;
+  }
+}
+.form-div {
+  margin: 15px;
+  box-sizing: border-box;
+  //min-width: calc(#{$media-sm} + 50px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 400px;
+}
+input {
+  border: 1px solid rgb(197, 197, 197);
+  min-height: 2rem;
+}
+.short-input {
+  width: 200px;
+}
+.long-input {
+  width: 360px;
+}
+.btnSubmit {
+  min-height: 40px;
+  max-width: 150px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 3px;
+  margin: 15px;
 }
 
 @media (max-width: $media-sm) {
@@ -219,6 +280,23 @@ nav {
   }
   .dish-wrapper {
     grid-template-columns: 85% 15%;
+  }
+  header {
+    margin: 10px auto;
+    .title-head {
+      line-height: 200px;
+    }
+  }
+  #reserve-left {
+    max-width: calc(#{$media-sm} - 170px);
+    min-width: calc(#{$media-sm} - 170px);
+    margin: 10px;
+    padding: 10px;
+  }
+  #reserve-right {
+    min-width: calc(#{$media-sm} - 305px);
+    margin: 10px;
+    padding: 0;
   }
 }
 @media (max-width: $media-md) {

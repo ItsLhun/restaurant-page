@@ -22,8 +22,8 @@ const createAbout = (mainContent) => {
   paraOne.appendChild(subparaThree);
   paraOne.appendChild(subparaFour);
 
-  subparaOne.textContent = `Founded in 1955 by the legendary Mick Eissentan, NOMAD was established as a modern beacon to the bold and inconformists of the time. An inviting palace free of judgements and  ill intentions where everyone is welcome to join the conversation.`;
-  subparaTwo.textContent = `To this day we stand faithful to NOMAD's original spirit, every evolving but never changing. Welcome!`;
+  subparaOne.textContent = `Since our modest beginnings in 1955, NOMAD was established as a modern beacon to the bold and inconformists. An inviting palace where everyone is welcome to join the conversation. `;
+  subparaTwo.textContent = `To this day we stand faithful to the original spirit, ever evolving but never changing. We trust that whoever you are, you'll stroll into NOMAD and state to yourself as we did back in 1955. "Ahh... this is the place I need to be".`;
 
   subparaThree.textContent = `"Part of the secret to success in life is to eat what you like, and let the food fight it out inside."`;
   subparaFour.textContent = `- Mark Twain`;

@@ -147,6 +147,26 @@ nav {
   }
 }
 
+@media (max-width: 1200px) {
+  .page-section-res {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-section-res {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 15px 0;
+  }
+}
+
 .menu-side {
   font-family: Georgia, serif;
   min-width: 576px;
@@ -234,6 +254,10 @@ nav {
   font-size: 1.1rem;
 }
 
+.aboutus-par-one p {
+  margin-top: 55px;
+}
+
 .aboutus-par-two {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -243,6 +267,71 @@ nav {
 .quote-text {
   font-size: 1.2rem;
   font-style: italic;
+}
+
+#reserve-left {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 50px;
+  width: calc(576px - 100px);
+  padding: 70px;
+}
+
+#reserve-left p {
+  text-align: justify;
+  line-height: 1.2rem;
+}
+
+#reserve-right {
+  font-family: Georgia, serif;
+  margin: 0 auto;
+  margin-top: 50px;
+  min-width: calc(576px - 250px);
+  min-height: calc(576px - 200px);
+}
+
+#reserve-right label {
+  text-align: left;
+}
+
+.form-div {
+  margin: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 400px;
+}
+
+input {
+  border: 1px solid #c5c5c5;
+  min-height: 2rem;
+}
+
+.short-input {
+  width: 200px;
+}
+
+.long-input {
+  width: 360px;
+}
+
+.btnSubmit {
+  min-height: 40px;
+  max-width: 150px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  margin: 15px;
 }
 
 @media (max-width: 576px) {
@@ -264,6 +353,23 @@ nav {
   .dish-wrapper {
     -ms-grid-columns: 85% 15%;
         grid-template-columns: 85% 15%;
+  }
+  header {
+    margin: 10px auto;
+  }
+  header .title-head {
+    line-height: 200px;
+  }
+  #reserve-left {
+    max-width: calc(576px - 170px);
+    min-width: calc(576px - 170px);
+    margin: 10px;
+    padding: 10px;
+  }
+  #reserve-right {
+    min-width: calc(576px - 305px);
+    margin: 10px;
+    padding: 0;
   }
 }
 
